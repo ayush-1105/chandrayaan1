@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <style>
+            .banner {
+                background-color: #000;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                font-family: sans-serif;
+            }
+            
+            .back-text{
+                font-size: 7rem;
+                font-weight: 900;
+                margin-top: 20vh;
+                color: rgba(255, 255, 255, 0.01);
+                background-image: url(background.jpg);
+                background-repeat: repeat-x;
+                -webkit-background-clip: text;
+                animation: texto 30s linear infinite;
+            }
+            
+            @keyframes texto {
+                0% {
+                    background-position: left 0px top 30%;
+                }
+                80% {
+                    background-position: left 900px top 30%;
+                }
+            }
+        </style>
+    </head>
+    <body >
+       <div class="banner">
+        <div class="back-text">
+            INDIA
+        </div>
+       </div>
+    </body>
+</html>

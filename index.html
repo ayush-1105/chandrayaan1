@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chandrayan </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f0f0f0;
+    z-index: 9999;
+    animation: fadeOut 1.5s forwards;
+}
+
+.rocket {
+    width: 100px;
+    animation: launch 1.5s linear forwards;
+}
+
+.loader-text {
+    font-size: 3rem;
+    margin: 20px 0;
+    top: 50%;
+    color: #333;
+}
+
+.guided-by {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2rem;
+    font-weight: 900;
+    color:black;
+}
+
+@keyframes launch {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+
+.banner1 {
+                /* background-color: #000; */
+                margin: 0;
+                /* min-height: 60vh; */
+                padding: 0;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                font-family: sans-serif;
+            }
+            
+            .back-text{
+                /* font-size: 11rem; */
+                font-size:9rem;
+                font-weight: 900;
+                /* margin-top: 8vh; */
+                color: rgba(255, 255, 255, 0.01);
+                background-image: url(background.jpg);
+                background-repeat: repeat-x;
+                background-clip: text;
+                animation: texto 45s linear infinite;
+            }
+            
+            @keyframes texto {
+                0% {
+                    background-position: left 0px top 30%;
+                }
+                50% {
+                    background-position: left 900px top 30%;
+                }
+            }
+
+  </style>
+</head>
+<body>
+  <section class="loader">
+    <p class="loader-text">Chandrayaan Project</p>
+    <div class="rocket-container">
+        <img src="rocket.png" alt="Rocket Loader" class="rocket">
+    </div>
+    <p class="guided-by">Guided by Dhiraj D. Nage Sir</p>
+</section>
+
+<header>
+  <nav>
+      <div class="nav-container">
+          <div class="logo">
+              <a href="index.html">Chandrayan</a>
+          </div>
+          <ul class="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                  <a href="">Chandrayan</a>
+                  <ul class="dropdown-menu">
+                      <li><a href="chandrayan1.html">Chandrayaan&nbsp;1</a></li>
+                      <li><a href="chandrayan2.html">Chandrayaan 2</a></li>
+                      <li><a href="chandrayan3.html">Chandrayaan 3</a></li>
+                  </ul>
+              </li>
+              <li><a href="research.html">Research</a></li>
+              <li><a href="future.html">Future</a></li>
+          </ul>
+      </div>
+  </nav>
+</header>
+
+<section class="banner">
+    <div class="banner-text">
+      
+      <section class="banner1">
+        <div class="back-text">
+            Chandrayaan
+        </div>
+        </section>
+        <ul>
+        
+        <li><h3>Into the</h3></li>
+        <li><h3>Space</h3></li>
+      </ul>
+    </div>
+</section>
+
+  
+
+<section class="view">
+    <div class="block">
+      <a href="chandrayan1.html">
+        <div class="chandrayaan-section">
+          <div class="image-container">
+            <img src="chandrayaan1.webp" alt="Chandrayaan 1" />
+          </div>
+          <div class="text-container">
+            <h2>Chandrayaan 1</h2>
+            <p>Chandrayaan-1, India's first mission to the Moon, launched in 2008, provided crucial data on the Moon's surface, confirming the presence of water.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="block">
+      <a href="chandrayan2.html">
+        <div class="chandrayaan-section">
+          <div class="image-container">
+            <img src="chandrayaan2.webp" alt="Chandrayaan 2" />
+          </div>
+          <div class="text-container">
+            <h2>Chandrayaan 2</h2>
+            <p>Launched in 2019, Chandrayaan-2 expanded India's lunar exploration, focusing on the Moon’s south pole to further understand the surface.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="block">
+      <a href="chandrayan3.html">
+        <div class="chandrayaan-section">
+          <div class="image-container">
+            <img src="chandrayaan3.webp" alt="Chandrayaan 3" />
+          </div>
+          <div class="text-container">
+            <h2>Chandrayaan 3</h2>
+            <p>Chandrayaan-3, aimed at successfully landing on the Moon’s surface, continues India's journey in space exploration, with a focus on a safe landing.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+</section>
+<a href="achievement.html">
+<footer>
+    <p>© 2024 Chandrayan Mission. All rights reserved.</p>
+</footer>
+</a>
+</body>
+</html>

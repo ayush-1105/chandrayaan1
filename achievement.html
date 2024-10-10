@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discoveries and Achievements - Chandrayaan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    .carousel-inner {
+      display: flex;
+      animation: slide 30s infinite; 
+      width: 500%; 
+    }
+
+    .carousel-item {
+      display: flex;
+      flex: 1 0 100%;
+      align-items: flex-start; 
+      box-sizing: border-box;
+      padding: 2rem;
+    }
+
+    .left-images {
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; 
+      padding-left: 2%;
+      gap:1rem;
+    }
+
+    .left-images img {
+      width: 100%;
+      height: 48%; 
+      object-fit: cover;
+      
+      border-radius: 10px;
+    }
+
+    .right-text {
+      width: 70%;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    .right-text h3 {
+      margin-bottom: 15px;
+      font-size: 28px;
+      color: #333;
+    }
+    
+    .right-text p {
+      font-size: 1rem;
+
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 1.5rem;
+    }
+
+    
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      15% { transform: translateX(0); }
+      20% { transform: translateX(-100%); } 
+      35% { transform: translateX(-100%); } 
+      40% { transform: translateX(-200%); }
+      55% { transform: translateX(-200%); } 
+      60% { transform: translateX(-300%); } 
+      75% { transform: translateX(-300%); } 
+      80% { transform: translateX(-400%); }
+      95% { transform: translateX(-400%); } 
+      100% { transform: translateX(0); } 
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">Chandrayan</a>
+        </div>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Chandrayan</a>
+            <ul class="dropdown-menu">
+              <li><a href="chandrayan1.html">Chandrayan&nbsp;1</a></li>
+              <li><a href="chandrayan2.html">Chandrayan 2</a></li>
+              <li><a href="chandrayan3.html">Chandrayan 3</a></li>
+            </ul>
+          </li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="future.html">Future</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        <div class="left-images">
+          <img src="./images/water1.jpg" alt="Chandrayan 1 Image 1">
+          <img src="./images/water2.jpg" alt="Moon Image">
+        </div>
+        <div class="right-text">
+          <h3>Chandrayaan 1 Discovery</h3>
+          <p>Chandrayaan-1 was India’s first mission to the Moon. It made several groundbreaking discoveries, the most important being the detection of water/hydroxyl on the lunar surface. Here are some key points:</p>
+          <ul>
+            <br><br>          <br><br>
+
+
+            <li>Discovered evidence of water molecules on the Moon's surface.</li><br>
+            <li>Used a NASA instrument to confirm the presence of hydroxyl in the lunar soil.</li><br>
+            <li>Deployed the Moon Impact Probe (MIP) which confirmed the existence of water ice.</li><br>
+            <li>Helped map lunar surface characteristics and provided data for future missions.</li><br>
+            <li>Collaboration with NASA, ESA, and other space agencies advanced global space research.</li><br>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="left-images">
+          <img src="images/south1.jpg" alt="Chandrayan 2 Image 1">
+          <img src="images/south2.jpg" alt="Lunar Surface Image">
+        </div>
+        <div class="right-text">
+          <h3>Chandrayaan 2 Discovery</h3>
+          <p>Chandrayaan-2 was tasked with exploring the Moon’s South Pole. Although its lander did not achieve a soft landing, the mission was still a significant success. Key points include:</p>
+          <ul>
+            <br><br>          <br><br>
+
+
+            <li>Mapped the Moon’s South Pole, identifying the presence of ice in shadowed regions.</li><br>
+            <li>Studied the surface composition, revealing key elements like magnesium and aluminum.</li><br>
+            <li>Detected traces of lunar soil and atmosphere, contributing to understanding lunar geology.</li><br>
+            <li>Confirmed the presence of water ice in permanently shadowed areas of the Moon.</li><br>
+            <li>The orbiter continues to provide valuable data for future lunar missions.</li><br>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="left-images">
+          <img src="images/magma1.avif" alt="Chandrayan 3 Image 1">
+          <img src="images/magma2.avif" alt="Lunar Mission Image">
+        </div>
+        <div class="right-text">
+          <h3>Chandrayaan 3 Achievement</h3>
+          <p>Chandrayaan-3 contributed further to our understanding of the Moon. Key achievements include:</p>
+          <ul>
+            <br><br>          <br><br>          <br><br>
+
+
+
+            <li>Detected chemical signatures supporting the theory of a past magma ocean on the Moon.</li><br>
+            <li>Provided insight into the Moon's geological history and the evolution of its surface.</li><br>
+            <li>Confirmed the complexity of lunar surface composition with trace elements like sodium.</li><br>
+            <li>Laid the groundwork for future research on the Moon’s internal structure.</li><br>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="left-images">
+          <br>
+          <img src="images/mangalyaan1.webp" alt="Mars Mission Image 1">
+          <img src="images/mangalyaan2.jpg" alt="Mars Surface Image">
+        </div>
+        <div class="right-text">
+          <h3>Other ISRO Achievements</h3>
+          <p>Beyond lunar exploration, ISRO has accomplished numerous significant space missions. Notable achievements include:</p>
+          <ul>
+            <br><br>                 <br><br>
+            <br><br>          <br><br>
+
+
+
+            <li>First interplanetary mission, Mars Orbiter Mission (Mangalyaan), successfully entering Mars orbit on the first attempt.</li><br>
+            <li>Provided key data about the Martian atmosphere, particularly around methane detection.</li><br>
+            <li>Launched multiple satellites, contributing to climate monitoring, communication, and navigation systems globally.</li><br>
+            <li>Planned future interplanetary missions, including potential Venus and asteroid exploration.</li><br>
+          </ul>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="left-images">
+          <img src="images/future51.webp" alt="Future Mission Image 1">
+          <img src="images/future52.webp" alt="Rocket Launch Image">
+        </div>
+        <div class="right-text">
+          <h3>Future Lunar Missions</h3>
+          <p>ISRO’s vision for future lunar exploration is ambitious. Here’s what’s planned:</p>
+          <ul>
+            <br><br>          <br><br>          <br><br>
+            <br><br>
+
+
+
+            <li>Chandrayaan-4 aims to further investigate the lunar surface and study deeper layers of the Moon.</li><br>
+            <li>Focus on exploring more complex surface compositions and geological processes.</li><br>
+            <li>Plans to collaborate with international space agencies for joint lunar research and exploration.</li><br>
+            <li>Developing advanced technologies for more robust and safer lunar landings.</li><br>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Chandrayaan Missions. All rights reserved.</p>
+    
+  </footer>
+</body>
+</html>

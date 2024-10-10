@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #101D42;
+  padding: 20px;
+  position: relative;
+  top: 0;
+  z-index: 2;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  flex: 1;
+}
+
+.logo a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  margin-left: 20px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: 0.8s;
+}
+
+.navbar li a:hover {
+  color: #ffcc00;
+  background-color:#152266;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #091A9A;
+  list-style: none;
+  padding: 10px 0;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+}
+
+.dropdown-menu li a {
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+main {
+  flex: 1;
+  padding: 50px;
+  text-align: center;
+}
+
+.banner {
+  background-image: url(galaxy1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.banner-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.9rem;
+  background-color: rgba(0,0,249,0.2);
+  font-weight: 900;
+  font-family: 'Poppins', sans-serif;
+}
+
+.banner-text ul {
+  list-style-type: none;
+}
+
+.banner-text li {
+  position: relative;
+  opacity: 0;
+  animation: animate 10s linear infinite;
+}
+
+.banner-text li h3 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.banner-text li:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.banner-text li:nth-child(3) {
+  animation-delay: 8s;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  23% {
+    opacity: 0;
+  }
+  27% {
+    opacity: 0;
+    transform: scale(10);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.view {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 3rem;
+  padding: 50px;
+}
+
+.chandrayaan-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5%;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease-in-out;
+}
+
+.chandrayaan-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  width: 45%;
+  overflow: hidden;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.text-container {
+  width: 45%;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.block a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.chandrayaan-section1 {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 3rem;
+  margin-top: 2rem;
+  border-radius: 10px;
+  border: 1px solid #000;
+}
+
+.image-container1 {
+  width: 45%;
+  position: sticky;
+  top: 20px;
+}
+
+.sticky-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.text-container1 {
+  width: 55%;
+  padding-left: 20px;
+}
+
+.text-container1 h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-container1 h3 {
+  font-size: 20px;
+  margin: 15px 0 5px;
+}
+
+.text-container1 p,
+.text-container1 ul {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.no-dots {
+  list-style-type: none;
+  padding: 0;
+}
+
+.no-dots li {
+  margin-bottom: 5px;
+}
+
+.chandrayaan-details {
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 3rem;
+}
+
+.chandrayaan-details h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+table {
+  margin-top: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+td {
+  padding: 15px;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+  position: relative;
+  bottom: 0;
+}
