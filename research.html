@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Chandrayaan </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="rocket.png">
+
+    <style>
+        .boxes {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 5%; 
+        }
+
+        .box {
+            width: 45%;
+            padding: 5%;
+            display: flex;
+            border: 1px solid #ccc;
+            border-radius: 10px; 
+            text-align: center;
+            background-color: #f9f9f9; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .box-content {
+            display: flex;
+        }
+
+        .box-image {
+            width: 50%; 
+            border-radius: 10px;
+        }
+
+        .box-text {
+            width: 50%; 
+            padding-left: 10px; 
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #062b52; 
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <a href="index.html">Chandrayaan</a>
+          </div>
+          <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+              <a href="#">Chandrayaan</a>
+              <ul class="dropdown-menu">
+                <li><a href="chandrayan1.html">Chandrayaan&nbsp;1</a></li>
+                <li><a href="chandrayan2.html">Chandrayaan 2</a></li>
+                <li><a href="chandrayan3.html">Chandrayaan 3</a></li>
+              </ul>
+            </li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="future.html">Future</a></li>
+          </ul>
+        </div>
+      </nav>
+</header>
+
+<section class="chandrayaan-details">
+    <h2>Chandrayaan-1: Pioneering India's Lunar Exploration</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No.</th>
+                <th>Parameter</th>
+                <th>Specifications</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Launch Year</td>
+                <td>2008</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Objectives</td>
+                <td>Mineralogical and chemical mapping of the lunar surface</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Key Milestone</td>
+                <td>Confirmed presence of water on the Moon</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>End of Mission</td>
+                <td>2009 (due to loss of communication)</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="chandrayaan-details">
+    <h2>Chandrayaan-2: Striving for a Soft Landing</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No.</th>
+                <th>Parameter</th>
+                <th>Specifications</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Launch Year</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Components</td>
+                <td>Orbiter, Vikram Lander, Pragyan Rover</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Challenges</td>
+                <td>Lost contact during Vikram's descent</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Outcome</td>
+                <td>Orbiter continues to send valuable data</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="chandrayaan-details">
+    <h2>Chandrayaan-3: Success in Lunar South Pole Landing</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Sl No.</th>
+                <th>Parameter</th>
+                <th>Specifications</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Launch Year</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Landing Date</td>
+                <td>23 August 2023</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Landing Site</td>
+                <td>Near the lunar South Pole</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>Significance</td>
+                <td>First country to land in the unexplored region</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section class="boxes">
+    <div class="box">
+        <div class="box-content">
+            <img src="images/achievement.jpg" alt="Achievements Image" class="box-image">
+            <div class="box-text">
+                <h3>Achievements</h3>
+                <p>Explore the significant milestones achieved by Chandrayaan missions.</p>
+                <a href="achievement.html" class="button">View Achievements</a>
+            </div>
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <img src="images/futureOfChandrayaan.jpg" alt="Future Image" class="box-image">
+            <div class="box-text">
+                <h3>Future Missions</h3>
+                <p>Discover the upcoming missions and plans for further lunar exploration.</p>
+                <a href="future.html" class="button">View Future Missions</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Chandrayaan Mission. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
